@@ -5,7 +5,8 @@ This script serves as both a function and a standalone program to convert a fold
 
 Welcome to bmp2pdf! A quick little script to convert a folder of .bmp files into a single PDF.
 This script can be used as a function or run by itself. 
-If you choose to run the file by itself, check the options at the bottom. 
+
+This script works by first converting the .bmp files to .png files and then writing those .png files to individual pages in the final PDF. You can set the name and output path for the PDF as well as whether to save the converted .png files or not.
 
 # Dependencies
 # This program requires natsort, fpdf, and cv2. If you wish to use this program standalone, you will also need tkinter.
