@@ -1,7 +1,7 @@
 # Python-Bitmaps-to-PDF
 This script serves as both a function and a standalone program to convert a folder of .bmp files to a single PDF.
 
-# Documentation
+# Introduction
 
 Welcome to bmp2pdf! A quick little script to convert a folder of .bmp files into a single PDF.
 This script can be used as a function or run by itself. 
