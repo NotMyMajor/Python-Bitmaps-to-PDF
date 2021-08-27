@@ -15,8 +15,8 @@ cv2 is used to process and handle the image files.
 tkinter is used in the standalone process for easy folder selection.
 
 The function requires the following arguments:
-bmp_folder: This should be a directory path (string) leading to the directory containing the .bmp files you want to convert.
-save_path: This should be a directory path (string) leading to the directory in which you want to save the PDF. This can be the same as bmp_path or different.
-pdf_name: This should be a string containing the desired name of your PDF. If this name is missing the .pdf extension, it will automatically be added.
-save_png: Boolean. This script converts the .bmp images to .png images before adding them to the PDF. If you wish to save the .png versions of the images in addition to the PDF, set this value to 1.
+* bmp_folder: This should be a directory path (string) leading to the directory containing the .bmp files you want to convert.
+* save_path: This should be a directory path (string) leading to the directory in which you want to save the PDF. This can be the same as bmp_path or different.
+* pdf_name: This should be a string containing the desired name of your PDF. If this name is missing the .pdf extension, it will automatically be added.
+* save_png: Boolean. This script converts the .bmp images to .png images before adding them to the PDF. If you wish to save the .png versions of the images in addition to the PDF, set this value to 1.
 
