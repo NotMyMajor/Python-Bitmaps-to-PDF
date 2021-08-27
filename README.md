@@ -22,3 +22,10 @@ The function requires the following arguments:
 * pdf_name: This should be a string containing the desired name of your PDF. If this name is missing the .pdf extension, it will automatically be added.
 * save_png: Boolean. This script converts the .bmp images to .png images before adding them to the PDF. If you wish to save the .png versions of the images in addition to the PDF, set this value to 1.
 
+
+# Copyright
+NotMyMajor/Python-Bitmaps-to-PDF is licensed under the
+GNU General Public License v3.0
+Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
+
+See COPYING.txt for full licensing information.
