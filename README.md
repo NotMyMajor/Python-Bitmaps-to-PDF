@@ -7,13 +7,14 @@ Welcome to bmp2pdf! A quick little script to convert a folder of .bmp files into
 This script can be used as a function or run by itself. 
 If you choose to run the file by itself, check the options at the bottom. 
 
-# THIS PROGRAM REQUIRES NATSORT, FPDF, AND CV2. IF YOU WISH TO USE THIS PROGRAM STANDALONE, YOU WILL ALSO NEED TKINTER.
+# Dependencies
+# This program requires natsort, fpdf, and cv2. If you wish to use this program standalone, you will also need tkinter.
+* natsort is used to sort the list of .bmp files in a more natural way. This means that .bmp files will be sorted alphabetically or numerically in the fashion "1, 2, 3, 4, 5..." rather than the default "1, 10, 11...2, 20, 21...etc.".
+* fpdf is used to create and write the final PDF.
+* cv2 is used to process and handle the image files.
+* tkinter is used in the standalone process for easy folder selection.
 
-natsort is used to sort the list of .bmp files in a more natural way. This means that .bmp files will be sorted alphabetically or numerically in the fashion "1, 2, 3, 4, 5..." rather than the default "1, 10, 11...2, 20, 21...etc.".
-fpdf is used to create and write the final PDF.
-cv2 is used to process and handle the image files.
-tkinter is used in the standalone process for easy folder selection.
-
+# Arguments
 The function requires the following arguments:
 * bmp_folder: This should be a directory path (string) leading to the directory containing the .bmp files you want to convert.
 * save_path: This should be a directory path (string) leading to the directory in which you want to save the PDF. This can be the same as bmp_path or different.
