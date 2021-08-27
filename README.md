@@ -9,7 +9,7 @@ This script can be used as a function or run by itself.
 This script works by first converting the .bmp files to .png files and then writing those .png files to individual pages in the final PDF. You can set the name and output path for the PDF as well as whether to save the converted .png files or not.
 
 # Dependencies
-# This program requires natsort, fpdf, and cv2. If you wish to use this program standalone, you will also need tkinter.
+## This program requires natsort, fpdf, and cv2. If you wish to use this program standalone, you will also need tkinter.
 * natsort is used to sort the list of .bmp files in a more natural way. This means that .bmp files will be sorted alphabetically or numerically in the fashion "1, 2, 3, 4, 5..." rather than the default "1, 10, 11...2, 20, 21...etc.".
 * fpdf is used to create and write the final PDF.
 * cv2 is used to process and handle the image files.
