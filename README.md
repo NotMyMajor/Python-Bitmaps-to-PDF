@@ -15,6 +15,13 @@ This script works by first converting the .bmp files to .png files and then writ
 * cv2 is used to process and handle the image files.
 * tkinter is used in the standalone process for easy folder selection.
 
+Install these dependencies like so:
+
+```CommandPrompt
+python -m pip install natsort fpdf opencv-python
+```
+[Tkinter](https://docs.python.org/3/library/tkinter.html) should already be included in the defualt Python installation.
+
 # Arguments
 The function requires the following arguments:
 * bmp_folder: This should be a directory path (string) leading to the directory containing the .bmp files you want to convert.
@@ -22,6 +29,14 @@ The function requires the following arguments:
 * pdf_name: This should be a string containing the desired name of your PDF. If this name is missing the .pdf extension, it will automatically be added.
 * save_png: Boolean. This script converts the .bmp images to .png images before adding them to the PDF. If you wish to save the .png versions of the images in addition to the PDF, set this value to 1.
 
+So a call to this function should look like:
+```Python
+bmp2pdf(bmpd_folder, save_path, pdf_name, 0);
+```
+or
+```Python
+bmp2pdf(bmpd_folder, save_path, pdf_name, 1);
+```
 
 # Copyright
 NotMyMajor/Python-Bitmaps-to-PDF is licensed under the
