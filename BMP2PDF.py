@@ -132,11 +132,20 @@ def bmp2pdf(bmp_folder, save_path, pdf_name, save_png):
 
         print("No .bmp files found.")
 
-# Standalone use. Set the variables as needed for your use case. bmp_folder and save_path are determined from tkinter filedialogs. save_png can be a boolean value. pdf_name should be a string.
-print("Choose the .bmp file directory.")
-bmp_folder = str(filedialog.askdirectory(title="Select .bmp folder"))
-save_png = 0
-print("Choose PDF save directory.")
-save_path = str(filedialog.askdirectory(title="Select PDF save folder"))
-pdf_name = "your_pdf_name_here.pdf"
-bmp2pdf(bmp_folder, save_path, pdf_name, save_png)
+def main():
+    
+    # Standalone use. Set the variables as needed for your use case. bmp_folder and save_path are determined from tkinter filedialogs. save_png can be a boolean value. pdf_name should be a string.
+    print("Choose the .bmp file directory.")
+    bmp_folder = str(filedialog.askdirectory(title="Select .bmp folder"))
+    if not bmp_folder:
+        raise ValueError("ERROR: No directory selectd.")
+    save_png = 0
+    print("Choose PDF save directory.")
+    save_path = str(filedialog.askdirectory(title="Select PDF save folder"))
+    if not save_path:
+        raise ValueError("ERROR: No directory selectd.")
+    pdf_name = "your_pdf_name_here.pdf"
+    bmp2pdf(bmp_folder, save_path, pdf_name, save_png)
+    
+if __name__ == "__main__":
+    main()
